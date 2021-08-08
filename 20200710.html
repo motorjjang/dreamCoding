@@ -1,0 +1,23 @@
+<script>
+    function doSomething(add) {
+        console.log(add);
+    }
+
+    function doSomething2() {
+        const result = add(2, 3);
+        console.log("result : " + result);
+    }
+
+    function add(a, b) {
+        const sum = a + b;
+        return sum;
+    }
+
+    doSomething(add);
+    doSomething2();
+
+    const addFun = add;
+    console.log(addFun);
+
+    console.log(addFun(1,2));
+</script>
